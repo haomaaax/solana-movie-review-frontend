@@ -1,9 +1,9 @@
 import { Card } from './Card'
 import { FC, useEffect, useMemo, useState } from 'react'
 import { Movie } from '../models/Movie'
-import * as web3 from '@solana/web3.js'
-import { MovieCoordinator } from '../coordinators/MovieCoordinator'
-import { Button, Center, HStack, Input, Spacer } from '@chakra-ui/react'
+
+const MOVIE_REVIEW_PROGRAM_ID = 'CenYq6bDRB7p73EjsPEpiYN7uveyPUTdXkDkgUduboaN'
+
 
 export const MovieList: FC = () => {
     const connection = new web3.Connection(web3.clusterApiUrl('devnet'))
